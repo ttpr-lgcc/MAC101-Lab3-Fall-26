@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() 
+
+{
+    int credits;
+    double gpa;
+    int holds;
+    int courseReq;
+
+    cout << "Enter the number of credits: " << endl;
+    cin >> credits;
+    cout << "Enter your GPA: " << endl;
+    cin >> gpa;
+    cout << "Is there any holds? " << endl;
+    cin >> holds;
+    cout << "Do you have all required courses completed? " << endl;
+    cin >> courseReq;
+    if (credits >= 60 && gpa >= 2.0 && holds == 0 && courseReq == 0)
+    { 
+      cout << "Yayy. Congratulations! You are eligible to graduate." << endl;
+    }
+     else 
+     { cout << "Sorry , you don't have enough credits to graduate." << endl;}
+    
+     return 0;
+
+}
